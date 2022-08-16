@@ -1,5 +1,5 @@
 #services {
-  margin-top: 10rem;
+  padding-top: 10rem;
 
   .services-list {
     margin-top: 7rem;
@@ -25,6 +25,39 @@
 
       &:hover {
         transform: scale(1.03);
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  #services {
+    .services-list {
+      justify-content: center;
+      .service-card {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #services {
+    .services-list {
+      gap: 4rem;
+      .service-card {
+        flex-wrap: wrap;
+
+        .card-img {
+          img {
+            width: 40%;
+            margin: 0 auto;
+          }
+        }
+
+        .card-content {
+          text-align: center;
+        }
       }
     }
   }

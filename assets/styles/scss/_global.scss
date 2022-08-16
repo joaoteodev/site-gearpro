@@ -10,10 +10,14 @@ body {
 
 body {
   background: #000;
+
+  &.active {
+    overflow: hidden;
+  }
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 114rem;
   margin: 0 auto;
 }
 
@@ -32,5 +36,19 @@ body {
 
   &:hover {
     background: darken($blue, 10%);
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 3rem;
   }
 }

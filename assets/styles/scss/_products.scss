@@ -1,9 +1,9 @@
 .products {
-  margin-top: 10rem;
+  padding-top: 10rem;
   .products-list {
     display: flex;
     justify-content: space-between;
-    margin-top: 10rem;
+    padding-top: 10rem;
 
     .product-item {
       background: $gray;
@@ -30,6 +30,35 @@
       &:hover {
         transform: scale(1.03) translateY(-1.3rem);
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .products {
+    .products-list {
+      padding-top: 15rem;
+      flex-wrap: wrap;
+      gap: 15rem;
+      justify-content: center;
+
+      .product-item {
+        width: 90%;
+        height: auto;
+        // min-height: 27.4rem;
+
+        img {
+          width: 30%;
+        }
+
+        &:nth-child(2) {
+          margin: 0;
+          img {
+            width: 50%;
+            margin-top: -10rem;
+          }
+        }
       }
     }
   }

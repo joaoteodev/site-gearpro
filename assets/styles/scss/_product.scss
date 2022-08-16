@@ -4,6 +4,7 @@
   .product-review {
     display: flex;
     align-items: center;
+    padding-top: 10rem;
 
     .box-left {
       .product-title {
@@ -69,6 +70,59 @@
 
     .box-right {
       width: 90%;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  #main-content {
+    .product-review {
+      flex-wrap: wrap;
+
+      .box-left {
+        text-align: center;
+        .product-subtitle {
+          width: 100%;
+        }
+
+        .product-description {
+          width: 75%;
+          margin: 0 auto;
+          font-size: 1.6rem;
+          margin-bottom: 2rem;
+        }
+
+        .product-buttons {
+          justify-content: center;
+        }
+      }
+
+      .box-right {
+        width: 100%;
+        margin-top: 2rem;
+        img {
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #main-content {
+    .product-review {
+      .box-left {
+        .product-buttons {
+          flex-wrap: wrap;
+          margin-top: 2rem;
+
+          .default-button {
+            width: 100%;
+            justify-content: center;
+          }
+        }
+      }
     }
   }
 }

@@ -45,3 +45,11 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .section-top {
+    .section-top-title {
+      letter-spacing: 0;
+    }
+  }
+}

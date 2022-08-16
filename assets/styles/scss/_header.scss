@@ -67,3 +67,13 @@
     }
   }
 }
+
+@media (max-width: 1199px) {
+  #header {
+    .header-nav {
+      .header-menu {
+        display: none;
+      }
+    }
+  }
+}

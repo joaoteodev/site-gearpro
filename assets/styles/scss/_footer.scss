@@ -40,3 +40,16 @@
     text-align: center;
   }
 }
+
+@media (max-width: 1199px) {
+  #footer {
+    .footer-row {
+      flex-wrap: wrap;
+      gap: 5rem;
+      .box {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
