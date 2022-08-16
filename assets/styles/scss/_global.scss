@@ -1,0 +1,36 @@
+$gray: #222222;
+$dark-gray: #1a1a1a;
+$blue: #1491cb;
+$purple: #c83fff;
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.default-button {
+  text-transform: uppercase;
+  height: 4.6rem;
+  line-height: 4.6rem;
+  padding: 0 2.5rem;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: background 0.3s;
+
+  &:hover {
+    background: darken($blue, 10%);
+  }
+}

@@ -1,0 +1,31 @@
+#services {
+  margin-top: 10rem;
+
+  .services-list {
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2.5rem;
+
+    .service-card {
+      background: $gray;
+      width: 49%;
+      border-radius: 3.5rem;
+      display: flex;
+      align-items: center;
+      padding: 3.5rem;
+      gap: 2rem;
+      transition: all 0.3s;
+      .card-img {
+        img {
+          width: 50rem;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+}

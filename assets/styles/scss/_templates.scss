@@ -1,0 +1,47 @@
+.section-top {
+  text-align: center;
+
+  .section-top-title {
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: $blue;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 0.5rem;
+    opacity: 0.25;
+  }
+
+  .section-top-subtitle {
+    position: relative;
+    z-index: 1;
+    font-size: 1.8rem;
+    margin-top: -4.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-top-link {
+    position: relative;
+    color: $blue;
+    text-decoration: none;
+    transition: all 0.3s;
+    padding: 0.5rem;
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: url(../../images/arrow-icon.svg);
+      width: 32px;
+      height: 32px;
+      top: 0.1rem;
+      right: 100%;
+      transition: all 0.4s;
+    }
+
+    &:hover {
+      color: darken($blue, 10%);
+
+      &:after {
+        right: -3.5rem;
+      }
+    }
+  }
+}

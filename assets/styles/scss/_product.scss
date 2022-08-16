@@ -1,0 +1,74 @@
+#main-content {
+  margin-top: 11rem;
+  padding: 5rem 0;
+  .product-review {
+    display: flex;
+    align-items: center;
+
+    .box-left {
+      .product-title {
+        font-size: 6rem;
+        font-style: italic;
+        font-family: "Kanit", sans-serif;
+      }
+
+      .product-subtitle {
+        color: $purple;
+        font-size: 3.5rem;
+        line-height: 1;
+        width: 90%;
+        margin-bottom: 10px;
+      }
+
+      .product-description {
+        // width: 90%;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+
+      .product-price {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        color: $blue;
+        font-weight: 300;
+      }
+
+      .product-buttons {
+        display: flex;
+        gap: 2rem;
+
+        .buy-button {
+          background: $blue;
+          border: none;
+          display: flex;
+          gap: 1.3rem;
+          align-items: center;
+
+          img {
+            width: 2.5rem;
+            margin-top: -0.4rem;
+          }
+
+          &:hover {
+            background: darken($blue, 10%);
+          }
+        }
+
+        .about-button {
+          display: flex;
+          align-items: center;
+          gap: 0.7rem;
+          img {
+            margin-top: -0.2rem;
+            width: 2.5rem;
+          }
+        }
+      }
+    }
+
+    .box-right {
+      width: 90%;
+    }
+  }
+}
