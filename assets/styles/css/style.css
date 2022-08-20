@@ -493,7 +493,7 @@ body.active {
   height: 5rem;
   position: absolute;
   transform: translateY(50%);
-  bottom: 20rem;
+  bottom: 10rem;
   z-index: 3;
 }
 #members .swiper-buttons .swiper-button {
