@@ -351,6 +351,10 @@ body.active {
   }
 }
 @media (max-width: 600px) {
+  #main-content {
+    padding-top: 0;
+    padding-bottom: 10rem;
+  }
   #main-content .product-review .box-left .product-buttons {
     flex-wrap: wrap;
     margin-top: 2rem;
@@ -608,6 +612,11 @@ body.active {
   width: 50%;
   height: 5rem;
   font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#contacts .contacts-wrapper .form .form-button:hover {
+  background: #0f709d;
 }
 
 @media (max-width: 1199px) {
@@ -626,6 +635,9 @@ body.active {
   #contacts .contacts-wrapper .form .field.name, #contacts .contacts-wrapper .form .field.email {
     width: 100%;
     margin: 0;
+  }
+  #contacts .contacts-wrapper .form .form-button {
+    width: 100%;
   }
 }
 #footer {
